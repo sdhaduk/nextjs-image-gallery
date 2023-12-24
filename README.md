@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# Description
+
 This is a sample project that I used to learn the NextJs app directory and its features, including:
 * static and dynamic server-side rendering
 * incremental static regeneration
