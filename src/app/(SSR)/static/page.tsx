@@ -1,4 +1,4 @@
-import { UnplashImage } from "@/models/unsplash.image";
+import { UnsplashImage } from "@/models/unsplash.image";
 import Image from "next/image";
 import Link from "next/link";
 import { Alert } from "@/components/bootstrap";
@@ -11,7 +11,7 @@ export default async function Page() {
   const response = await fetch(
     `https://api.unsplash.com/photos/random?client_id=${process.env.UNSPLASH_ACCESS_KEY}`
   );
-  const image: UnplashImage = await response.json();
+  const image: UnsplashImage = await response.json();
 
   const width = Math.min(image.width, 500);
   const height = (width / image.width) * image.height;
