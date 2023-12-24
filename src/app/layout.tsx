@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Container, SSRProvider } from "@/components/bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,8 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div> This div is shared across layout </div>
-        {children}
+        <main>
+          <Container className="py-4">{children}</Container>
+        </main>
       </body>
     </html>
   );
